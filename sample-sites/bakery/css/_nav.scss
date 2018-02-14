@@ -25,6 +25,19 @@ header.site-header {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .navbar-nav.navbar-right {
+  position: absolute;
+  right: 0;
+  transform: translatex(-50%);
+  }
+}
+
 nav {
   background: $nav-bg;
 
@@ -32,6 +45,24 @@ nav {
     list-style: none;
     padding: .9rem;
 
+    span.left {
+      float: left;
+      display: $display;
+    }
+
+    span.center {
+      display: $display;
+      margin: 0 auto;
+    }
+
+    span.right {
+      float: right;
+      display: $display;
+
+      li.social-icon {
+        padding: 0 10px;
+      }
+    }
     li.site-logo {
       font-family: $logo-font;
       color: $nav-color;
@@ -110,27 +141,6 @@ nav {
 
     li.in a:hover {
       background: $instagram;
-    }
-  }
-
-  ul {
-    span.left {
-      float: left;
-      display: $display;
-    }
-
-    span.center {
-      display: $display;
-      margin: 0 auto;
-    }
-
-    span.right {
-      float: right;
-      display: $display;
-
-      li.social-icon {
-        padding: 0 10px;
-      }
     }
   }
 }

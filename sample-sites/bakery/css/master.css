@@ -35,6 +35,19 @@ nav ul li.site-logo a:link, nav ul li.site-logo a:visited, nav ul li.site-menu a
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .navbar-nav.navbar-right {
+    position: absolute;
+    right: 0;
+    transform: translatex(-50%);
+  }
+}
+
 nav {
   background: rgba(86, 83, 76, 0.53);
 }
@@ -42,6 +55,25 @@ nav {
 nav ul {
   list-style: none;
   padding: .9rem;
+}
+
+nav ul span.left {
+  float: left;
+  display: inline-block;
+}
+
+nav ul span.center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav ul span.right {
+  float: right;
+  display: inline-block;
+}
+
+nav ul span.right li.social-icon {
+  padding: 0 10px;
 }
 
 nav ul li.site-logo {
@@ -90,23 +122,4 @@ nav ul li.fb a:hover {
 
 nav ul li.in a:hover {
   background: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
-}
-
-nav ul span.left {
-  float: left;
-  display: inline-block;
-}
-
-nav ul span.center {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-nav ul span.right {
-  float: right;
-  display: inline-block;
-}
-
-nav ul span.right li.social-icon {
-  padding: 0 10px;
 }
