@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="356.664" height="99.968" viewBox="0 0 4053 1136">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 746.683px;
+      }
+
+      .cls-2, .cls-6 {
+        fill: #f7941e;
+      }
+
+      .cls-2, .cls-4 {
+        text-anchor: middle;
+      }
+
+      .cls-2, .cls-5 {
+        font-family: "SF New Republic";
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        font-size: 1041.667px;
+      }
+
+      .cls-5 {
+        fill: #fab913;
+      }
+    </style>
+  </defs>
+  <g>
+    <text transform="translate(2099 1067) scale(0.45)" class="cls-1"><tspan class="cls-2">Reinventing Designs</tspan></text>
+    <text x="2037" y="695" class="cls-3"><tspan class="cls-4"><tspan class="cls-5">ark<tspan class="cls-6">dezin</tspan></tspan></tspan></text>
+  </g>
+</svg>

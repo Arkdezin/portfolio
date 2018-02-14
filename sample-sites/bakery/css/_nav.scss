@@ -1,0 +1,136 @@
+
+/* Common Style */
+html, body, div, ul, li, article,span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $body-font;
+}
+
+/* Header Section of the Site*/
+header.site-header {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 745px;
+  max-width: 100%;
+}
+
+/* Navigation Menu properties */
+%nav-link {
+  color: $nav-color;
+  font-size: 1.2rem;
+  padding: .9rem;
+  text-decoration: none;
+}
+
+nav {
+  background: $nav-bg;
+
+  ul{
+    list-style: none;
+    padding: .9rem;
+
+    li.site-logo {
+      font-family: $logo-font;
+      color: $nav-color;
+      font-weight: 400;
+      display: $display;
+      font-size: 1.4rem;
+
+      a:link {
+        @extend %nav-link;
+      }
+
+      a:visited {
+        @extend %nav-link;
+      }
+    }
+
+    li.site-menu {
+      display: $display;
+
+      a:link {
+        @extend %nav-link;
+        text-transform: uppercase;
+      }
+
+      a:visited {
+        @extend %nav-link;
+        text-transform: uppercase;
+      }
+    }
+
+    li.dash::before {
+      content: '~';
+      color: $nav-color;
+      font-size: 1.2rem;
+      padding: 0 30px;
+    }
+
+    li.dash::after {
+      @extend li.dash::before;
+    }
+
+    li.social-icon {
+      display: $display;
+
+      a:link {
+        @extend %nav-link;
+      }
+
+      a:visited {
+        @extend %nav-link;
+      }
+    }
+
+    li.tw{
+      a {
+        padding: 10px;
+        line-height: 1.2rem;
+      }
+    }
+
+    li.fb {
+      @extend li.tw;
+    }
+
+    li.in {
+      @extend li.tw;
+    }
+
+    li.tw a:hover {
+      background: $twitter;
+    }
+
+    li.fb a:hover {
+      background: $facebook;
+    }
+
+    li.in a:hover {
+      background: $instagram;
+    }
+  }
+
+  ul {
+    span.left {
+      float: left;
+      display: $display;
+    }
+
+    span.center {
+      display: $display;
+      margin: 0 auto;
+    }
+
+    span.right {
+      float: right;
+      display: $display;
+
+      li.social-icon {
+        padding: 0 10px;
+      }
+    }
+  }
+}

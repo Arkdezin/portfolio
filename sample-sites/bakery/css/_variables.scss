@@ -1,0 +1,34 @@
+$display: inline-block;
+$nav-bg: rgba(86, 83, 76, .53);
+$nav-color: #efebe4;
+$bullet-outline: #c2aea4;
+$bullet-color: #fff;
+$bullet-coffee: #c8b6ad;
+$body-bg: #ffffff;
+$hero-img-bg: #9e9c93;
+$hero-center-shadow-1: #564f4c;
+$hero-center-shadow-2: #56534c;
+$hero-btn-color: #56534c;
+$hero-btn-border: 1px dotted #9e9c93;
+$heading-color: #56534c;
+$subheading-color: #a47d5e;
+$text-color: #56534c;
+$quote-color: #a47d5e;
+$popup-color: #c9b176;
+$price-color: #dfc691;
+$footer-border: #c2beba;
+$logo-font: 'scriptina', sans-serif;
+$body-font: 'alegreya', serif;
+$facebook: #3b5998;
+$twitter: #00aced;
+$instagram: linear-gradient(to bottom right, #4c68d7, #8a3ab9,  #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+
+@font-face {
+  font-family: scriptina;
+  src: url('../font/scriptina-regular.ttf') format('truetype');
+};
+
+@font-face {
+  font-family: alegreya;
+  src: url('..font/alegreya-regular.ttf') format('truetype');
+};

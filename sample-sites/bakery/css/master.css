@@ -1,0 +1,112 @@
+/* Master CSS of Gustoso Bakery Site */
+@font-face {
+  font-family: scriptina;
+  src: url("../font/scriptina-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: alegreya;
+  src: url("..font/alegreya-regular.ttf") format("truetype");
+}
+
+/* Common Style */
+html, body, div, ul, li, article, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "alegreya", serif;
+}
+
+/* Header Section of the Site*/
+header.site-header {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 745px;
+  max-width: 100%;
+}
+
+/* Navigation Menu properties */
+nav ul li.site-logo a:link, nav ul li.site-logo a:visited, nav ul li.site-menu a:link, nav ul li.site-menu a:visited, nav ul li.social-icon a:link, nav ul li.social-icon a:visited {
+  color: #efebe4;
+  font-size: 1.2rem;
+  padding: .9rem;
+  text-decoration: none;
+}
+
+nav {
+  background: rgba(86, 83, 76, 0.53);
+}
+
+nav ul {
+  list-style: none;
+  padding: .9rem;
+}
+
+nav ul li.site-logo {
+  font-family: "scriptina", sans-serif;
+  color: #efebe4;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+nav ul li.site-menu {
+  display: inline-block;
+}
+
+nav ul li.site-menu a:link {
+  text-transform: uppercase;
+}
+
+nav ul li.site-menu a:visited {
+  text-transform: uppercase;
+}
+
+nav ul li.dash::before, nav ul li.dash::after {
+  content: '~';
+  color: #efebe4;
+  font-size: 1.2rem;
+  padding: 0 30px;
+}
+
+nav ul li.social-icon {
+  display: inline-block;
+}
+
+nav ul li.tw a, nav ul li.fb a, nav ul li.in a {
+  padding: 10px;
+  line-height: 1.2rem;
+}
+
+nav ul li.tw a:hover, nav ul li.fb a:hover, nav ul li.in a:hover {
+  background: #00aced;
+}
+
+nav ul li.fb a:hover {
+  background: #3b5998;
+}
+
+nav ul li.in a:hover {
+  background: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+}
+
+nav ul span.left {
+  float: left;
+  display: inline-block;
+}
+
+nav ul span.center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav ul span.right {
+  float: right;
+  display: inline-block;
+}
+
+nav ul span.right li.social-icon {
+  padding: 0 10px;
+}

@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	src: url(../fonts/Oswald-Bold.ttf);
+	font-family: 'Oswald Bold';
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #212121;
+}
+
+.clr {
+	color: #f7941e;
+}
+
+#fullscreen-port {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	min-height: 350px;
+	background-color:#252a30;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.home-port {
+	position: relative;
+	background-image: url(../images/portfolio-bg-mobile.jpg);
+}
+
+.home-port:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	pointer-events: none;
+	-webkit-background-image: linear-gradient(linear, left top,right top, from (rgba(49,61,65,0.6)) );
+	background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+}
+
+.port-container {
+	display: table;
+	margin: 0 auto;
+	padding: 0 20px;
+	height: 100%
+}
+
+.port-content {
+	display: table-cell;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a {
+	color: #5ea4f7;
+	
+}
+.port-logo img {
+	top: 2.5%;
+	display: inline-block;
+	left: 50%;
+	height: auto;
+	padding: 20px;
+	position: absolute;
+	text-decoration: none;
+	z-index: 2;
+	-webkit-transform:translateX(-50%);
+	transform: translateX(-50%);
+	width: 200px;
+}
+
+.port-content h1.headline {
+	font-size: 2.8rem;
+	color: #fff;
+	margin-bottom: .1rem;
+	font-family: 'Oswald Bold' !important;
+	line-height: 1.5;
+	letter-spacing: -.1rem;
+}
+
+h1.headline {
+	vertical-align: top;
+	overflow: hidden;
+	font-weight: 400;
+	-webkit-transform: translateY(-60%);
+	transform: translateY(-60%);
+}
+
+span #typed {
+	white-space: pre;
+	background-color: #f7941e !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: auto;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.button {
+	height: auto;
+	padding: 1.2rem 3.2rem;
+	font-size: 1.3rem;
+	line-height: normal;
+	text-transform: uppercase;
+	font-family: 'Oswald Bold' !important;
+	font-weight: 700;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	border-radius: 50px;
+	border: 2px solid #999;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+a.button-main {
+	color: #fff;
+	background: transparent;
+	text-decoration: none;
+	margin: 3.6rem 0 0;
+	padding: .6rem 1.6rem;
+	font-size: 1rem;
+	border: 2px solid #f7941e;
+}
+
+a.button-main:hover {
+	padding: .9rem 2rem;
+	color: #252a30;
+	background-color: #f7941e;
+	text-decoration: none;
+}
+
+.learn-more {
+	bottom: 2.5%;
+	display: inline-block;
+	font-size: 1.2rem;
+	left: 50%;
+	padding: 20px;
+	position: absolute;
+	white-space: nowrap;
+	text-decoration: none;
+	z-index: 2;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+}
+
+.learn-more a {
+	color: rgba(255,255,255,.7);
+	text-decoration: none;
+}
+
+.learn-more a:hover {
+	color: rgba(255,255,255,.9);
+	text-decoration: none;
+}
+
+section {
+	padding: 0 0 50px;
+	position: relative;
+}
+
+#knowledge {
+	border-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container {
+	max-width: 960px;
+	width: 85%;
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.container::after, .row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col, .cols {
+	width: 100%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+p.intro {
+	text-align: center;
+	font-size: 2rem;
+	margin: 4rem 0 1.8rem;
+	line-height: 1.4rem;
+	font-weight: 700;
+}
+
+p.intro-statement {
+	font-size: 1.2rem;
+	font-weight: 100;
+	text-align: center;
+	color: #909090;
+}
+
+#knowledge .block {
+	margin: 4.0rem 0 1.0rem;
+}
+	
+#knowledge h4.title {
+	margin: 1.8rem 0;
+	font-size: 3.4rem;
+	font-weight: 700;
+}
+
+p.summary {
+	font-size: 1.2rem;
+	color: #909090;
+	text-align: center;
+	font-weight: 100;
+	
+}
+
+footer {
+	padding: 80px 0 50px;
+	background-color: #353535;
+	color: #fff;
+	text-align: center;
+}
+
+footer a.logo {
+	position: relative;
+	background-image: url(../images/logo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 120px;
+	height: 33px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+
+footer p.self-made {
+	margin: 24px 0px;
+	color: rgba(255,255,255,.4);
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
+.social-media a {
+	display: inline-block;
+	color: rgba(255,255,255,0.6);
+	text-decoration: none;
+	margin: 0 8px;
+	height: 40px;
+	width: 40px;
+	font-size: 1.6rem;
+	line-height: 2.6;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 50px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.social-media a:hover {
+	border-bottom: none;
+	background-color: rgba(0,0,0,.4);
+}
+
+section#sub-footer {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #FED766;
+}
+
+#sub-footer p.intro-statement {
+	margin: 2.3rem 0 0;
+	color: #3B3B3B;
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 550px) {
+	.port-logo img {
+		width: 300px;
+	}
+	
+	.home-port {
+		background-image: url(../images/portfolio-bg-desktop.jpg);
+	}
+	
+	.port-content h1.headline {
+		font-size: 6.0rem;
+	}
+	
+	h1.headline {
+		-webkit-transform: translateY(-35%);
+		transform: translateY(-35%);
+	}
+	
+	a.button-main {
+		margin: 5rem 0 0 !important;
+		padding: 1.2rem 3.2rem;
+		font-size: 2.5rem;
+		border: 2px solid #f7941e;
+	}
+	
+	a.button-main:hover {
+		padding: 1.6rem 3.8rem;
+		color: #252a30;
+		background-color: #f7941e;
+	}
+	
+	.port-container {
+		padding: 0 40px;
+	}
+	
+	.learn-more{
+		font-size: 2rem;
+	}
+	
+	.container {
+		max-width: 1140px;
+		padding: 0;
+	}
+	
+	p.intro {
+		font-size: 3.2rem;
+		margin: 8rem 0 2rem;
+	}
+	
+	p.intro-statement {
+		font-size: 2.4rem;
+	}
+	
+	#knowledge .block {
+		margin: 4rem 0 0;
+	}
+	
+	#knowledge h4.title {
+		margin: 1.8rem 0;
+	}
+	
+	p.summary {
+		font-size: 1.8rem;
+	}
+	
+	body {
+		font-size: 1.4rem;
+	}
+	
+	footer a.logo {
+		width: 180px;
+		height: 50px;
+	}
+	
+	footer p.self-made {
+		font-size: 2.2rem;
+	}
+	
+	.social-media a {
+		width: 60px;
+		height: 60px;
+		line-height: 2.4;
+		font-size: 2.6rem;
+		margin: 0 16px;
+	}
+	
+	#sub-footer p.intro-statement {
+	margin: 4.2rem 0 0;
+	}
+}
