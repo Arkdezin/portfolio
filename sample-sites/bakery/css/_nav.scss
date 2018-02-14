@@ -21,7 +21,6 @@ header.site-header {
 %nav-link {
   color: $nav-color;
   font-size: 1.2rem;
-  padding: .9rem;
   text-decoration: none;
 }
 
@@ -43,7 +42,6 @@ nav {
 
   ul{
     list-style: none;
-    padding: .9rem;
 
     span.left {
       float: left;
@@ -96,8 +94,8 @@ nav {
     li.dash::before {
       content: '~';
       color: $nav-color;
-      font-size: 1.2rem;
-      padding: 0 30px;
+      font-size: 1rem;
+      //padding: 0 10px;
     }
 
     li.dash::after {
