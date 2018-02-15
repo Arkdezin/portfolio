@@ -7,6 +7,10 @@ html, body, div, ul, li, article,span {
   font-family: $body-font;
 }
 
+body {
+  background: $body-bg;
+}
+
 /* Header Section of the Site*/
 header.site-header {
   background-image: url(../images/hero-bg.jpg);
@@ -91,15 +95,19 @@ nav {
       }
     }
 
-    li.dash::before {
-      content: '~';
-      color: $nav-color;
-      font-size: 1rem;
-      //padding: 0 10px;
+    li {
+      a.dash::before {
+        content: '~';
+        color: $nav-color;
+        font-size: 1rem;
+        padding: 0 20px;
+      }
     }
 
-    li.dash::after {
-      @extend li.dash::before;
+    li {
+      a.dash::after {
+        @extend a.dash::before;
+      }
     }
 
     li.social-icon {

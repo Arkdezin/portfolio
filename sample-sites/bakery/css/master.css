@@ -17,6 +17,10 @@ html, body, div, ul, li, article, span {
   font-family: "alegreya", serif;
 }
 
+body {
+  background: #ffffff;
+}
+
 /* Header Section of the Site*/
 header.site-header {
   background-image: url(../images/hero-bg.jpg);
@@ -94,10 +98,11 @@ nav ul li.site-menu a:visited {
   text-transform: uppercase;
 }
 
-nav ul li.dash::before, nav ul li.dash::after {
+nav ul li a.dash::before, nav ul li a.dash::after {
   content: '~';
   color: #efebe4;
   font-size: 1rem;
+  padding: 0 20px;
 }
 
 nav ul li.social-icon {
