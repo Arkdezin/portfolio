@@ -36,6 +36,8 @@ nav ul li.site-logo a:link, nav ul li.site-logo a:visited, nav ul li.site-menu a
   color: #efebe4;
   font-size: 1.2rem;
   text-decoration: none;
+  text-align: center;
+  letter-spacing: .1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -127,9 +129,29 @@ nav ul li.in a:hover {
 }
 
 /* Footer Section CSS */
+footer {
+  background: #ffffff;
+}
+
+footer nav div ul.navbar-nav li a.dash::before, footer nav div ul.navbar-nav li a.dash::after {
+  color: #56534c;
+  font-size: 1.2rem;
+}
+
+footer nav div ul.navbar-nav li.site-logo a.navbar-brand:link, footer nav div ul.navbar-nav li.site-logo a.navbar-brand:visited {
+  font-size: 1.3rem;
+  color: #56534c;
+  font-weight: 500;
+}
+
+footer nav div ul.navbar-nav li.site-menu a.nav-link:link, footer nav div ul.navbar-nav li.site-menu a.nav-link:visited {
+  color: #56534c;
+  font-size: 1.2rem;
+}
+
 footer nav ul.footer-left, footer nav ul.footer-right {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #c2beba;
+  border-bottom: 1px solid #c2beba;
 }
 
 footer nav ul.footer-left li, footer nav ul.footer-right li {

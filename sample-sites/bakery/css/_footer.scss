@@ -1,13 +1,40 @@
 
 /* Footer Section CSS */
 footer {
+  background: $body-bg;
   nav {
-    span.footer-center {
-      //display: inline-block;
+    div {
+      ul.navbar-nav {
+        li {
+          a.dash::before {
+            color: $text-color;
+            font-size: 1.2rem;
+          }
+        }
+        li.site-logo {
+          a.navbar-brand:link {
+            font-size: 1.3rem;
+            color: $heading-color;
+            font-weight: 500;
+          }
+          a.navbar-brand:visited {
+            @extend a.navbar-brand:link;
+          }
+        }
+        li.site-menu {
+          a.nav-link:link {
+            color: $text-color;
+            font-size: 1.2rem;
+          }
+          a.nav-link:visited {
+            @extend a.nav-link:link;
+          }
+        }
+      }
     }
     ul.footer-left {
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid $footer-border;
+        border-bottom: 1px solid $footer-border;
 
         li {
           padding: 0 1rem;
