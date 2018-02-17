@@ -5,6 +5,7 @@ html, body, div, ul, li, article,span {
   padding: 0;
   box-sizing: border-box;
   font-family: $body-font;
+  font-size: 1rem;
 }
 
 body {
@@ -17,7 +18,7 @@ header.site-header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 745px;
+  min-height: 100vh;
   max-width: 100%;
 }
 
@@ -28,19 +29,6 @@ header.site-header {
   text-decoration: none;
   text-align: center;
   letter-spacing: .1rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-  }
-  .navbar-nav.navbar-right {
-    position: absolute;
-    right: 0;
-    transform: translatex(-50%);
-  }
 }
 
 nav {
@@ -151,4 +139,50 @@ nav {
       background: $instagram;
     }
   }
+}
+
+/* Common For Tablets and Desktops */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1824px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .navbar-nav.navbar-right {
+    position: absolute;
+    right: 0;
+    transform: translatex(-50%);
+  }
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1280px) {
+    nav.top {
+      ul {
+        li.site-logo {
+          a {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+}
+
+/* Desktops and laptops */
+@media only screen
+  and (min-device-width: 1280px)
+  and (max-device-width: 1824px) {
+    nav.top {
+      ul {
+        li.site-logo {
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
 }

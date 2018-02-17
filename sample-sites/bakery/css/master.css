@@ -15,6 +15,7 @@ html, body, div, ul, li, article, span {
   padding: 0;
   box-sizing: border-box;
   font-family: "alegreya", serif;
+  font-size: 1rem;
 }
 
 body {
@@ -27,7 +28,7 @@ header.site-header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 745px;
+  min-height: 100vh;
   max-width: 100%;
 }
 
@@ -38,19 +39,6 @@ nav ul li.site-logo a:link, nav ul li.site-logo a:visited, nav ul li.site-menu a
   text-decoration: none;
   text-align: center;
   letter-spacing: .1rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-  }
-  .navbar-nav.navbar-right {
-    position: absolute;
-    right: 0;
-    transform: translatex(-50%);
-  }
 }
 
 nav {
@@ -126,6 +114,34 @@ nav ul li.fb a:hover {
 
 nav ul li.in a:hover {
   background: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+}
+
+/* Common For Tablets and Desktops */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1824px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .navbar-nav.navbar-right {
+    position: absolute;
+    right: 0;
+    transform: translatex(-50%);
+  }
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
+  nav.top ul li.site-logo a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktops and laptops */
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
+  nav.top ul li.site-logo a {
+    font-size: 1.5rem;
+  }
 }
 
 /* Footer Section CSS */
