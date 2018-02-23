@@ -32,3 +32,13 @@ $instagram: linear-gradient(to bottom right, #4c68d7, #8a3ab9,  #cd486b, #fbad50
   font-family: alegreya;
   src: url('..font/alegreya-regular.ttf') format('truetype');
 };
+
+@font-face {
+  font-family: proxima-nova;
+  src:url('..font/proximanova-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: playfairDisplay;
+  src: url('..font/playfairdisplay-regular.ttf') format('truetype');
+}
