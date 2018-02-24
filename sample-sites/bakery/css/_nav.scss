@@ -8,6 +8,40 @@ html, body, div, ul, li, article,span {
   font-size: 1rem;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+button:focus, button:active {
+  box-shadow: none;
+  //outline: none;
+}
+
+div.row {
+  div {
+    h1 {
+      color: $heading-color;
+      font-weight: 800;
+    }
+    h4 {
+      color: $subheading-color;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      color: $text-color;
+      font-family: $para-font;
+    }
+    h2 {
+      color: $heading-color;
+    }
+    p.site-quote {
+      color: $quote-color;
+      font-family: $logo-font;
+    }
+  }
+}
+
 body {
   background: $body-bg;
 }
@@ -85,19 +119,11 @@ nav {
       }
     }
 
-    li {
-      a.dash::before {
-        content: '~';
-        color: $nav-color;
-        font-size: 1rem;
-        padding: 0 20px;
-      }
-    }
-
-    li {
-      a.dash::after {
-        @extend a.dash::before;
-      }
+    li.site-Menu:not(:first-child)::before {
+      content: '~';
+      color: $nav-color;
+      font-size: 1rem;
+      padding: 0 20px;
     }
 
     li.social-icon {
@@ -165,7 +191,7 @@ nav {
       ul {
         li.site-logo {
           a {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -180,7 +206,7 @@ nav {
       ul {
         li.site-logo {
           a {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
           }
         }
       }

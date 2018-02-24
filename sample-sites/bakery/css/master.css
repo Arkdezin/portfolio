@@ -6,7 +6,17 @@
 
 @font-face {
   font-family: alegreya;
-  src: url("..font/alegreya-regular.ttf") format("truetype");
+  src: url("../font/alegreya-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: url("../font/proximanova-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: playfairDisplay;
+  src: url("../font/playfairdisplay-regular.ttf") format("truetype");
 }
 
 /* Common Style */
@@ -16,6 +26,39 @@ html, body, div, ul, li, article, span {
   box-sizing: border-box;
   font-family: "alegreya", serif;
   font-size: 1rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+button:focus, button:active {
+  box-shadow: none;
+}
+
+div.row div h1 {
+  color: #56534c;
+  font-weight: 800;
+}
+
+div.row div h4 {
+  color: #a47d5e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+div.row div p {
+  color: #56534c;
+  font-family: "proxima-nova", sans-serif;
+}
+
+div.row div h2 {
+  color: #56534c;
+}
+
+div.row div p.site-quote {
+  color: #a47d5e;
+  font-family: "scriptina", sans-serif;
 }
 
 body {
@@ -88,7 +131,7 @@ nav ul li.site-menu a:visited {
   text-transform: uppercase;
 }
 
-nav ul li a.dash::before, nav ul li a.dash::after {
+nav ul li.site-Menu:not(:first-child)::before {
   content: '~';
   color: #efebe4;
   font-size: 1rem;
@@ -113,7 +156,7 @@ nav ul li.fb a:hover {
 }
 
 nav ul li.in a:hover {
-  background: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+  background: linear-gradient(to bottom left, #4c68d7, #8a3ab9, #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
 }
 
 /* Common For Tablets and Desktops */
@@ -133,23 +176,171 @@ nav ul li.in a:hover {
 /* Tablets Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
   nav.top ul li.site-logo a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
 /* Desktops and laptops */
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
   nav.top ul li.site-logo a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
+/* Hero Section CSS */
+.text-shadow, header div h1.site-heading, header div p {
+  text-shadow: 1px 1px 2px #3d3029;
+}
+
+.box-shadow, header div hr {
+  box-shadow: 1px 1px 2px #3d3029;
+}
+
+header div h1.site-heading {
+  color: #fff;
+  text-align: center;
+  font-family: "playfairDisplay", serif;
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+header div hr {
+  background: transparent;
+  width: 10rem;
+  border-top: 2px dashed #fff;
+}
+
+header div p {
+  color: #fff;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.8rem;
+}
+
+header div button.btn-menu {
+  color: #fff;
+  background: rgba(86, 83, 76, 0.53);
+  border: 2px dashed #9e9c93;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0;
+}
+
+/* Common For Tablets and Desktops */
+/* Tablets Portrait and Landscape */
+/* Desktops and laptops */
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
+  header div h1.site-heading {
+    font-size: 6.2rem;
+  }
+  header div hr {
+    width: 15rem;
+    border-top: 4px dashed #fff;
+  }
+  header div button.btn-menu {
+    padding: 0 1.6rem;
+  }
+}
+
+/* Art of Cakes Section Properties */
+div.site-artcake {
+  background-image: url(../images/art-of-cake.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+div.site-artcake div.row div h1 {
+  color: #56534c;
+  font-weight: 800;
+}
+
+div.site-artcake div.row div h4 {
+  color: #a47d5e;
+  text-transform: uppercase;
+}
+
+div.site-artcake div.row div p {
+  color: #56534c;
+  font-family: "proxima-nova", sans-serif;
+}
+
+div.site-artcake div.row div h2 {
+  color: #56534c;
+}
+
+div.site-artcake div.row div p.site-quote {
+  color: #a47d5e;
+  font-family: "scriptina", sans-serif;
+}
+
+/* Common For Tablets and Desktops */
+/* Tablets Portrait and Landscape */
+/* Desktops and laptops */
+/* Tasty Pancake Section Properties */
+div.site-pancake {
+  background-image: url(../images/pancake.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+div.site-pancake div.row {
+  padding: 5rem 0;
+}
+
+div.site-pancake div.row div {
+  padding: 0;
+}
+
+div.site-pancake div.row div.food-wid {
+  background: #fff;
+  padding: 1rem 4.2rem;
+}
+
+div.site-pancake div.row div.food-wid button.btn-prev, div.site-pancake div.row div.food-wid button.btn-nxt {
+  background: transparent;
+  border: 2px solid #d8bba3;
+  color: #d8bba3;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* Common For Tablets and Desktops */
+/* Tablets Portrait and Landscape */
+/* Desktops and laptops */
+/* Our Menu Section Properties */
+div.site-breakfast {
+  background-image: url(../images/breakfast.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* Common For Tablets and Desktops */
+/* Tablets Portrait and Landscape */
+/* Desktops and laptops */
+/* Jibarito Sandwich Section Properties */
+/* Common For Tablets and Desktops */
+/* Tablets Portrait and Landscape */
+/* Desktops and laptops */
 /* Footer Section CSS */
 footer nav {
   background: #f3f1e9;
 }
 
-footer nav div ul.navbar-nav li a.dash::before, footer nav div ul.navbar-nav li a.dash::after {
+footer nav div ul.navbar-nav li a.dash::before {
   color: #56534c;
   font-size: 1.2rem;
 }
@@ -157,7 +348,7 @@ footer nav div ul.navbar-nav li a.dash::before, footer nav div ul.navbar-nav li 
 footer nav div ul.navbar-nav li.site-logo a.navbar-brand:link, footer nav div ul.navbar-nav li.site-logo a.navbar-brand:visited {
   font-size: 1.3rem;
   color: #56534c;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 footer nav div ul.navbar-nav li.site-menu a.nav-link:link, footer nav div ul.navbar-nav li.site-menu a.nav-link:visited {
@@ -165,11 +356,37 @@ footer nav div ul.navbar-nav li.site-menu a.nav-link:link, footer nav div ul.nav
   font-size: 1.2rem;
 }
 
-footer nav ul.footer-left, footer nav ul.footer-right {
-  border-top: 1px solid #c2beba;
-  border-bottom: 1px solid #c2beba;
+footer nav div ul.footer-left, footer nav div ul.footer-right {
+  display: none;
 }
 
-footer nav ul.footer-left li, footer nav ul.footer-right li {
-  padding: 0 1rem;
+footer nav div ul.footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Common For Tablets and Desktops */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1824px) {
+  footer nav div.container-fluid {
+    padding: 0 1rem;
+  }
+  footer nav div.container-fluid ul.footer-logo li.site-logo a.na1:link, footer nav div.container-fluid ul.footer-logo li.site-logo a.navbar-brand:active {
+    font-size: 1.8rem;
+  }
+  footer nav div.container-fluid ul.footer-left, footer nav div.container-fluid ul.footer-right {
+    display: block;
+    border-top: 1px solid #c2beba;
+    border-bottom: 1px solid #c2beba;
+  }
+  footer nav div.container-fluid li {
+    padding: 0 1rem;
+  }
+  footer nav div.container-fluid ul.footer-right {
+    border-top: 1px solid #c2beba;
+    border-bottom: 1px solid #c2beba;
+  }
+  footer nav div.container-fluid ul.footer-right li {
+    padding: 0 1rem;
+  }
 }

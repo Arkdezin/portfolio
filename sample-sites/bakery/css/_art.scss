@@ -1,0 +1,55 @@
+
+/* Art of Cakes Section Properties */
+div.site-artcake {
+  background-image: url(../images/art-of-cake.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+
+  div.row {
+    div {
+      h1 {
+        color: $heading-color;
+        font-weight: 800;
+      }
+      h4 {
+        color: $subheading-color;
+        text-transform: uppercase;
+      }
+      p {
+        color: $text-color;
+        font-family: $para-font;
+      }
+      h2 {
+        color: $heading-color;
+      }
+      p.site-quote {
+        color: $quote-color;
+        font-family: $logo-font;
+      }
+    }
+  }
+}
+
+/* Common For Tablets and Desktops */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1824px) {
+
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1280px) {
+
+}
+
+/* Desktops and laptops */
+@media only screen
+  and (min-device-width: 1280px)
+  and (max-device-width: 1824px) {
+
+}

@@ -1,0 +1,58 @@
+
+/* Tasty Pancake Section Properties */
+div.site-pancake {
+  background-image: url(../images/pancake.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  max-width: 100%;
+  position: relative;
+
+  div.container {
+
+  }
+  div.row {
+    padding: 5rem 0;
+    div {
+      padding: 0;
+    }
+    div.food-wid {
+      background: #fff;
+      padding: 1rem 4.2rem;
+
+      button.btn-prev {
+        background: transparent;
+        border: 2px solid $btn-nxt-prev;
+        color: $btn-nxt-prev;
+        border-radius: 50%;
+        font-weight: 700;
+        //padding: 0 10px;
+      }
+      button.btn-nxt {
+        @extend button.btn-prev;
+      }
+    }
+  }
+}
+
+/* Common For Tablets and Desktops */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1824px) {
+
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1280px) {
+
+}
+
+/* Desktops and laptops */
+@media only screen
+  and (min-device-width: 1280px)
+  and (max-device-width: 1824px) {
+
+}

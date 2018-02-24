@@ -9,7 +9,7 @@ $hero-img-bg: #9e9c93;
 $hero-center-shadow-1: #564f4c;
 $hero-center-shadow-2: #56534c;
 $hero-btn-color: rgba(86, 83, 76, .53);
-$hero-btn-border: 1px dotted #9e9c93;
+$hero-btn-border: 2px dashed #9e9c93;
 $heading-color: #56534c;
 $subheading-color: #a47d5e;
 $text-color: #56534c;
@@ -21,7 +21,12 @@ $logo-font: 'scriptina', sans-serif;
 $body-font: 'alegreya', serif;
 $facebook: #3b5998;
 $twitter: #00aced;
-$instagram: linear-gradient(to bottom right, #4c68d7, #8a3ab9,  #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+$instagram: linear-gradient(to bottom left, #4c68d7, #8a3ab9,  #cd486b, #fbad50, #fccc63, #bc2a8d, #e95950);
+$heading-font: 'playfairDisplay', serif;
+$para-font: 'proxima-nova', sans-serif;
+$shadow-color: #3d3029;
+$btn-nxt-prev: #d8bba3;
+$btn-nxt-prev-hover: #56534c;
 
 @font-face {
   font-family: scriptina;
@@ -30,15 +35,15 @@ $instagram: linear-gradient(to bottom right, #4c68d7, #8a3ab9,  #cd486b, #fbad50
 
 @font-face {
   font-family: alegreya;
-  src: url('..font/alegreya-regular.ttf') format('truetype');
+  src: url('../font/alegreya-regular.ttf') format('truetype');
 };
 
 @font-face {
   font-family: proxima-nova;
-  src:url('..font/proximanova-regular.woff') format('woff');
+  src:url('../font/proximanova-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: playfairDisplay;
-  src: url('..font/playfairdisplay-regular.ttf') format('truetype');
+  src: url('../font/playfairdisplay-regular.ttf') format('truetype');
 }

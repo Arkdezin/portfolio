@@ -1,0 +1,31 @@
+
+/* Our Menu Section Properties */
+div.site-breakfast {
+  background-image: url(../images/breakfast.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* Common For Tablets and Desktops */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1824px) {
+
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1280px) {
+
+}
+
+/* Desktops and laptops */
+@media only screen
+  and (min-device-width: 1280px)
+  and (max-device-width: 1824px) {
+
+}
