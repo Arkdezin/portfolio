@@ -25,7 +25,7 @@ html, body, div, ul, li, article, span {
   padding: 0;
   box-sizing: border-box;
   font-family: "alegreya", serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .container-fluid {
@@ -34,6 +34,10 @@ html, body, div, ul, li, article, span {
 
 button:focus, button:active {
   box-shadow: none;
+}
+
+div.row {
+  margin: 0;
 }
 
 div.row div h1 {
@@ -131,11 +135,11 @@ nav ul li.site-menu a:visited {
   text-transform: uppercase;
 }
 
-nav ul li.site-Menu:not(:first-child)::before {
+nav ul li.site-menu:not(:first-child)::before a {
   content: '~';
   color: #efebe4;
   font-size: 1rem;
-  padding: 0 20px;
+  padding: 0 .5rem;
 }
 
 nav ul li.social-icon {

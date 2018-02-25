@@ -51,8 +51,8 @@ body {
 	top: 0;
 	bottom: 0;
 	pointer-events: none;
-	-webkit-background-image: linear-gradient(linear, left top,right top, from (rgba(49,61,65,0.6)) );
-	background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+	-webkit-background-image: linear-gradient(linear, left top,right top, from (rgba(49,61,65,0.5)) );
+	background-image: linear-gradient(90deg, rgba(49,61,65,0.5), rgba(49,61,65,0.5));
 }
 
 .port-container {
@@ -72,7 +72,7 @@ body {
 
 a {
 	color: #5ea4f7;
-	
+
 }
 .port-logo img {
 	top: 2.5%;
@@ -227,7 +227,7 @@ p.intro-statement {
 #knowledge .block {
 	margin: 4.0rem 0 1.0rem;
 }
-	
+
 #knowledge h4.title {
 	margin: 1.8rem 0;
 	font-size: 3.4rem;
@@ -239,7 +239,7 @@ p.summary {
 	color: #909090;
 	text-align: center;
 	font-weight: 100;
-	
+
 }
 
 footer {
@@ -283,9 +283,22 @@ footer p.self-made {
 	transition: all .3s ease-in-out;
 }
 
-.social-media a:hover {
+.social-media a.linkedin:hover {
 	border-bottom: none;
 	background-color: rgba(0,0,0,.4);
+	color: #0077B5;
+}
+
+.social-media a.facebook:hover {
+	border-bottom: none;
+	background-color: rgba(0,0,0,.4);
+	color: #3b5998;
+}
+
+.social-media a.gplus:hover {
+	border-bottom: none;
+	background-color: rgba(0,0,0,.4);
+	color: #d34836;
 }
 
 section#sub-footer {
@@ -299,86 +312,219 @@ section#sub-footer {
 	color: #3B3B3B;
 }
 
+section#my-work {
+	background: #eee;
+}
+
+.project-showcase img.project-image {
+	position: relative;
+	width: 100%
+}
+
+a.button-web {
+	color: #000;
+	background: transparent;
+	text-decoration: none;
+	margin: 3.6rem 0 0;
+	padding: .6rem 1.6rem;
+	font-size: 1rem;
+	border: 2px solid #f7941e;
+}
+
+a.button-web:hover {
+	padding: .9rem 2rem;
+	color: #f7941e;
+	background-color: #000;
+	text-decoration: none;
+}
+
+.project-showcase {
+	position: relative;
+	overflow: hidden;
+	border-bottom: .15rem solid #d6e1e5;
+}
+
+.project-showcase .project-content .project-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.project-showcase .project-content .project-description {
+	font-size: 1.2rem;
+	color: #93a4aa;
+	font-weight: 300;
+	margin: 15px 0 28px 0;
+
+}
+
+.project-showcase .project-content h4.project-detail {
+	font-weight: 500;
+}
+
+.project-showcase .project-content .project-tags {
+	color: #b2c6cd;
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+.project-showcase .project-content .project-tags::before {
+	content: '\2022';
+	margin-right: 4px;
+	color: #f7941e;
+	font-size: 1.8rem;
+}
+
+.project-showcase .project-content .project-tags li {
+	display: inline;
+	font-size: 1.6rem;
+}
+
+.project-showcase .project-content .project-tags li::after {
+	content: ',';
+}
+
+.project-showcase .project-content .project-tags li:last-child::after {
+	content: '';
+}
+
+ul {
+	margin-bottom: 2.5rem;
+}
+
+#sub-footer .my-email {
+	font-weight: 700;
+	font-size: 1.6rem;
+	letter-spacing: .1rem;
+	color: #333;
+}
+
+img.html5 {
+	background: #e34f26;
+	color: #fff;
+}
+
+img.js {
+	background: #f7df1e;
+}
+
+img.bs {
+	background: #428bca;
+}
+
+img.php {
+	background: #8892be;
+}
+
+img.jq {
+	background: #7ACEF4;
+}
+
+img.tech {
+	width: 12%;
+	padding: 5px;
+}
+img.git {
+	width: 9%;
+
+}
+
+h4.title-k {
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+.t-k {
+	background: #fff7e1;
+}
 
 
+
+
+
+
+
+/* Tablet and Desktop Properties */
 @media only screen and (min-width: 550px) {
 	.port-logo img {
 		width: 300px;
 	}
-	
+
 	.home-port {
 		background-image: url(../images/portfolio-bg-desktop.jpg);
 	}
-	
+
 	.port-content h1.headline {
 		font-size: 6.0rem;
 	}
-	
+
 	h1.headline {
 		-webkit-transform: translateY(-35%);
 		transform: translateY(-35%);
 	}
-	
+
 	a.button-main {
 		margin: 5rem 0 0 !important;
 		padding: 1.2rem 3.2rem;
 		font-size: 2.5rem;
 		border: 2px solid #f7941e;
 	}
-	
+
 	a.button-main:hover {
 		padding: 1.6rem 3.8rem;
 		color: #252a30;
 		background-color: #f7941e;
 	}
-	
+
 	.port-container {
 		padding: 0 40px;
 	}
-	
+
 	.learn-more{
 		font-size: 2rem;
 	}
-	
+
 	.container {
 		max-width: 1140px;
 		padding: 0;
 	}
-	
+
 	p.intro {
 		font-size: 3.2rem;
 		margin: 8rem 0 2rem;
 	}
-	
+
 	p.intro-statement {
 		font-size: 2.4rem;
 	}
-	
+
 	#knowledge .block {
 		margin: 4rem 0 0;
 	}
-	
+
 	#knowledge h4.title {
 		margin: 1.8rem 0;
 	}
-	
+
 	p.summary {
 		font-size: 1.8rem;
 	}
-	
+
 	body {
 		font-size: 1.4rem;
 	}
-	
+
 	footer a.logo {
 		width: 180px;
 		height: 50px;
 	}
-	
+
 	footer p.self-made {
 		font-size: 2.2rem;
 	}
-	
+
 	.social-media a {
 		width: 60px;
 		height: 60px;
@@ -386,8 +532,64 @@ section#sub-footer {
 		font-size: 2.6rem;
 		margin: 0 16px;
 	}
-	
+
 	#sub-footer p.intro-statement {
 	margin: 4.2rem 0 0;
+	}
+
+	#sub-footer .my-email {
+		font-size: 2.8rem;
+	}
+
+
+	.project-showcase img.project-image {
+		width: 80%;
+	}
+
+	a.button-web {
+		margin: 5rem 0 0 !important;
+		padding: 1rem 2.6rem;
+		font-size: 1.6rem;
+		border: 2px solid #f7941e;
+	}
+
+	a.button-web:hover {
+		padding: 1.2rem 2.8rem;
+		color: #f7941e;
+		background-color: #000;
+		border: none;
+	}
+
+	.project-showcase {
+		padding: 80px 0 20px;
+	}
+
+	.project-showcase .project-content .project-title {
+		font-size: 2.8rem;
+	}
+
+	.project-showcase .project-content .project-description {
+		font-size: 1.6rem;
+	}
+
+	.project-showcase .project-content h4.project-detail {
+		font-weight: 700;
+		color: #666;
+	}
+
+	.project-showcase .project-content .project-tags {
+		font-size: 1.3rem;
+	}
+
+	img.tech {
+		width: 20%;
+	}
+	img.git {
+		width: 13%;
+	}
+
+	h4.title-k {
+		font-weight: 600;
+		font-size: 2.6rem;
 	}
 }
