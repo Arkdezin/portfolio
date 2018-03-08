@@ -8,6 +8,15 @@ html, body, div, ul, li, article,span {
   font-size: 1.1rem;
 }
 
+[class*=col-] {
+  padding: 0;
+}
+
+*::selection {
+  background: $heading-color * 1.5;
+  color: $subheading-color * 1.8;
+}
+
 .container-fluid {
   padding: 0;
 }

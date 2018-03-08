@@ -1,18 +1,36 @@
 
 /* Art of Cakes Section Properties */
+#art-img {
+  img:not(:last-child) {
+    width: 50%;
+    padding: 10px;
+    outline: 5px solid #fff;
+    outline-offset: -20px
+  }
+  #art-center {
+    width: 40%;
+    position: relative;
+    top: -225px;
+    transform: translateY(-50%);
+  }
+}
 div.site-artcake {
   background-image: url(../images/art-of-cake.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: auto;
   max-width: 100%;
+  padding-top: 5.4rem;
 
   div.row {
     div {
+      text-align: center;
       h1 {
         color: $heading-color;
         font-weight: 800;
+        margin-bottom: 0;
+        line-height: 1;
       }
       h4 {
         color: $subheading-color;
@@ -24,11 +42,27 @@ div.site-artcake {
       }
       h2 {
         color: $heading-color;
+        font-weight: 600;
       }
       p.site-quote {
         color: $quote-color;
         font-family: $logo-font;
+        font-weight: 550;
+        letter-spacing: -.1rem;
+        text-align: center;
 
+        &::before, &::after {
+          content: '"';
+          color: $nav-bg;
+        }
+
+        &::before {
+
+          padding-right: 30px;
+        }
+        &::after {
+          padding-left: 30px;
+        }
       }
     }
   }
@@ -52,5 +86,13 @@ div.site-artcake {
 @media only screen
   and (min-device-width: 1280px)
   and (max-device-width: 1824px) {
-
+    h1 {
+      font-size: 3.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    p.site-quote {
+      font-size: 2.6rem;
+    }
 }

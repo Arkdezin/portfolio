@@ -12,8 +12,8 @@ $hero-btn-color: rgba(86, 83, 76, .53);
 $hero-btn-border: 2px dashed #9e9c93;
 $heading-color: #56534c;
 $subheading-color: #a47d5e;
-$text-color: #56534c;
-$quote-color: #a47d5e;
+$text-color: $heading-color;
+$quote-color: $subheading-color;
 $popup-color: #c9b176;
 $price-color: #dfc691;
 $footer-border: #c2beba;
@@ -27,6 +27,7 @@ $para-font: 'proxima-nova', sans-serif;
 $shadow-color: #3d3029;
 $btn-nxt-prev: #d8bba3;
 $btn-nxt-prev-hover: #56534c;
+$shadow: rgba(105, 80, 58, .45);
 
 @font-face {
   font-family: scriptina;

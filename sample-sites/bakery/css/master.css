@@ -1,4 +1,7 @@
-/* Master SCSS of Gustoso Bakery Site */
+/*
+* Version: 1.0.0
+* Author: Arkdezin
+*/
 @font-face {
   font-family: scriptina;
   src: url("../font/scriptina-regular.ttf") format("truetype");
@@ -26,6 +29,15 @@ html, body, div, ul, li, article, span {
   box-sizing: border-box;
   font-family: "alegreya", serif;
   font-size: 1.1rem;
+}
+
+[class*=col-] {
+  padding: 0;
+}
+
+*::selection {
+  background: #817d72;
+  color: #ffe1a9;
 }
 
 .container-fluid {
@@ -262,7 +274,7 @@ header div button.btn-menu {
   border: 2px dashed #9e9c93;
   font-size: 1.2rem;
   text-transform: uppercase;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 0;
@@ -301,12 +313,14 @@ header div button.btn-menu {
 }
 
 .bullet {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  position: relative;
+  top: -53px;
 }
 
 .bullet .two {
+  z-index: 8;
+  width: 106px;
+  height: 106px;
   transform: translateX(-50%);
 }
 
@@ -315,26 +329,51 @@ header div button.btn-menu {
   height: 80px;
   border-radius: 50%;
   background: #fff;
+  z-index: 9;
   transform: translate(-50%, 18.75%);
 }
 
 .bullet .zero {
+  z-index: 10;
+  width: 50px;
+  height: 45px;
   transform: translate(-50%, 75%);
 }
 
 /* Art of Cakes Section Properties */
+#art-img img:not(:last-child) {
+  width: 50%;
+  padding: 10px;
+  outline: 5px solid #fff;
+  outline-offset: -20px;
+}
+
+#art-img #art-center {
+  width: 40%;
+  position: relative;
+  top: -225px;
+  transform: translateY(-50%);
+}
+
 div.site-artcake {
   background-image: url(../images/art-of-cake.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: auto;
   max-width: 100%;
+  padding-top: 5.4rem;
+}
+
+div.site-artcake div.row div {
+  text-align: center;
 }
 
 div.site-artcake div.row div h1 {
   color: #56534c;
   font-weight: 800;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 div.site-artcake div.row div h4 {
@@ -349,17 +388,51 @@ div.site-artcake div.row div p {
 
 div.site-artcake div.row div h2 {
   color: #56534c;
+  font-weight: 600;
 }
 
 div.site-artcake div.row div p.site-quote {
   color: #a47d5e;
   font-family: "scriptina", sans-serif;
+  font-weight: 550;
+  letter-spacing: -.1rem;
+  text-align: center;
+}
+
+div.site-artcake div.row div p.site-quote::before, div.site-artcake div.row div p.site-quote::after {
+  content: '"';
+  color: rgba(86, 83, 76, 0.53);
+}
+
+div.site-artcake div.row div p.site-quote::before {
+  padding-right: 30px;
+}
+
+div.site-artcake div.row div p.site-quote::after {
+  padding-left: 30px;
 }
 
 /* Common For Tablets and Desktops */
 /* Tablets Portrait and Landscape */
 /* Desktops and laptops */
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p.site-quote {
+    font-size: 2.6rem;
+  }
+}
+
 /* Tasty Pancake Section Properties */
+.btn-hover, div.site-pancake div.row div.food-wid button.btn-prev:hover, div.site-pancake div.row div.food-wid button.btn-nxt:hover {
+  color: #56534c;
+  border: 2px solid #56534c;
+}
+
 div.site-pancake {
   background-image: url(../images/pancake.jpg);
   background-position: center center;
@@ -383,24 +456,89 @@ div.site-pancake div.row div.food-wid {
   padding: 1rem 4.2rem;
 }
 
+div.site-pancake div.row div.food-wid img {
+  border-radius: 50%;
+  padding: 10px;
+}
+
 div.site-pancake div.row div.food-wid button.btn-prev, div.site-pancake div.row div.food-wid button.btn-nxt {
   background: transparent;
   border: 2px solid #d8bba3;
   color: #d8bba3;
   border-radius: 50%;
   font-weight: 700;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+
+div.site-pancake div.row div.food-wid p {
+  margin-top: 1.4rem;
+}
+
+div.site-pancake div.row div.food-wid #site-timer {
+  background-image: url(../images/pancake-ready.png);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  position: absolute;
+  right: -120px;
+  top: -50px;
+  padding: 2rem;
+  box-shadow: 0 10px 54px 1px rgba(105, 80, 58, 0.45);
+  text-align: center;
+}
+
+div.site-pancake div.row div.food-wid #site-timer h3 {
+  color: #a47d5e;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+div.site-pancake div.row div.food-wid #site-timer .site-time {
+  color: #dfc691;
+  font-size: 4.6rem;
+  font-weight: 600;
+  font-family: "alegreya", serif;
+  line-height: 1.1rem;
+  padding: 5px 0;
+}
+
+div.site-pancake div.row div.food-wid #site-timer p {
+  font-family: "alegreya", serif;
+  font-weight: 700;
+  color: #817d72;
+  margin: 0;
+  padding-top: 25px;
+}
+
+div.site-pancake div.row div.food-wid #food-bg {
+  position: absolute;
+  max-width: 100%;
+  height: 295px;
+  bottom: 0;
+  right: 0;
+}
+
+div.site-pancake div.row div.food-wid #food-bg img {
+  border-radius: 0;
+  padding: 0;
 }
 
 /* Common For Tablets and Desktops */
 /* Tablets Portrait and Landscape */
 /* Desktops and laptops */
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
+  div.site-pancake div.row div.food-wid p {
+    margin-top: 2.6rem;
+  }
+}
+
 /* Our Menu Section Properties */
 div.site-breakfast {
   background-image: url(../images/breakfast.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: auto;
   max-width: 100%;
 }
 
