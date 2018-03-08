@@ -79,6 +79,38 @@ header.site-header {
   max-width: 100%;
 }
 
+#under {
+  background: #d9534f;
+}
+
+#under .row div h3 {
+  color: #fff;
+  text-align: center;
+  margin: .5rem 0 .1rem 0;
+}
+
+#under .row div p {
+  padding: 0;
+  margin: .1rem 0;
+  font-size: .9rem;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*
+.home-port:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	pointer-events: none;
+	-webkit-background-image: linear-gradient(linear, left top,right top, from (rgba(49,61,65,0.6)) );
+	background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+}
+*/
 /* Navigation Menu properties */
 nav ul li.site-logo a:link, nav ul li.site-logo a:visited, nav ul li.site-menu a:link, nav ul li.site-menu a:visited, nav ul li.social-icon a:link, nav ul li.social-icon a:visited {
   color: #efebe4;
@@ -196,7 +228,7 @@ nav ul li.in a:hover {
   text-shadow: 1px 1px 2px #3d3029;
 }
 
-.box-shadow, header div hr {
+.box-shadow {
   box-shadow: 1px 1px 2px #3d3029;
 }
 
@@ -204,14 +236,15 @@ header div h1.site-heading {
   color: #fff;
   text-align: center;
   font-family: "playfairDisplay", serif;
-  font-size: 4.4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: .2rem;
+  padding-top: 1.2rem;
 }
 
 header div hr {
   background: transparent;
-  width: 10rem;
+  width: 8rem;
   border-top: 2px dashed #fff;
 }
 
@@ -219,19 +252,22 @@ header div p {
   color: #fff;
   text-align: center;
   font-family: "proxima-nova", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
 }
 
 header div button.btn-menu {
   color: #fff;
   background: rgba(86, 83, 76, 0.53);
   border: 2px dashed #9e9c93;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 0;
+  margin: 1.2rem 0;
+  padding: .5rem 1.4rem;
 }
 
 /* Common For Tablets and Desktops */
@@ -239,15 +275,51 @@ header div button.btn-menu {
 /* Desktops and laptops */
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1824px) {
   header div h1.site-heading {
-    font-size: 6.2rem;
+    font-size: 5rem;
+    padding-top: 3rem;
   }
   header div hr {
-    width: 15rem;
+    width: 13rem;
     border-top: 4px dashed #fff;
   }
-  header div button.btn-menu {
-    padding: 0 1.6rem;
+  header div p {
+    font-size: 1.6rem;
+    margin: 1.8rem 0;
   }
+  header div button.btn-menu {
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+    padding: .5rem 1.4rem;
+  }
+}
+
+/* Bullet Section of the site */
+.pos, .bullet .two, .bullet .one, .bullet .zero {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+}
+
+.bullet {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.bullet .two {
+  transform: translateX(-50%);
+}
+
+.bullet .one {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, 18.75%);
+}
+
+.bullet .zero {
+  transform: translate(-50%, 75%);
 }
 
 /* Art of Cakes Section Properties */

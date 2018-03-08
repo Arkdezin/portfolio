@@ -56,6 +56,26 @@ header.site-header {
   min-height: 100vh;
   max-width: 100%;
 }
+
+#under {
+  background: #d9534f;
+  .row {
+    div {
+      h3 {
+        color: #fff;
+        text-align: center;
+        margin: .5rem 0 .1rem 0;
+      }
+      p {
+        padding: 0;
+        margin: .1rem 0;
+        font-size: .9rem;
+        color: #fff;
+        text-shadow: none;
+      }
+    }
+  }
+}
 /*
 .home-port:before {
 	content: "";
