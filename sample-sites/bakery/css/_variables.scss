@@ -26,8 +26,9 @@ $heading-font: 'playfairDisplay', serif;
 $para-font: 'proxima-nova', sans-serif;
 $shadow-color: #3d3029;
 $btn-nxt-prev: #d8bba3;
-$btn-nxt-prev-hover: #56534c;
+$btn-nxt-prev-hover: $heading-color;
 $shadow: rgba(105, 80, 58, .45);
+$brk-text-color: $footer-border; 
 
 @font-face {
   font-family: scriptina;

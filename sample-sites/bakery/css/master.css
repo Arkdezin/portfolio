@@ -1,6 +1,7 @@
 /*
 * Version: 1.0.0
 * Author: Arkdezin
+* Website: Bakery Website project
 */
 @font-face {
   font-family: scriptina;
@@ -280,6 +281,7 @@ header div button.btn-menu {
   border-radius: 0;
   margin: 1.2rem 0;
   padding: .5rem 1.4rem;
+  outline: none;
 }
 
 /* Common For Tablets and Desktops */
@@ -351,8 +353,18 @@ header div button.btn-menu {
 #art-img #art-center {
   width: 40%;
   position: relative;
-  top: -225px;
+  top: -238px;
   transform: translateY(-50%);
+}
+
+#art-img #art-cc {
+  text-transform: uppercase;
+  color: #dfc691;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 195px;
+  z-index: 2222;
+  left: 190px;
 }
 
 div.site-artcake {
@@ -363,6 +375,7 @@ div.site-artcake {
   min-height: auto;
   max-width: 100%;
   padding-top: 5.4rem;
+  margin-bottom: -7rem;
 }
 
 div.site-artcake div.row div {
@@ -475,7 +488,7 @@ div.site-pancake div.row div.food-wid p {
   margin-top: 1.4rem;
 }
 
-div.site-pancake div.row div.food-wid #site-timer {
+div.site-pancake div.row div.food-wid .site-timer {
   background-image: url(../images/pancake-ready.png);
   background-repeat: no-repeat;
   max-width: 100%;
@@ -487,13 +500,13 @@ div.site-pancake div.row div.food-wid #site-timer {
   text-align: center;
 }
 
-div.site-pancake div.row div.food-wid #site-timer h3 {
+div.site-pancake div.row div.food-wid .site-timer h3 {
   color: #a47d5e;
   text-transform: uppercase;
   font-weight: 800;
 }
 
-div.site-pancake div.row div.food-wid #site-timer .site-time {
+div.site-pancake div.row div.food-wid .site-timer .site-time {
   color: #dfc691;
   font-size: 4.6rem;
   font-weight: 600;
@@ -502,7 +515,7 @@ div.site-pancake div.row div.food-wid #site-timer .site-time {
   padding: 5px 0;
 }
 
-div.site-pancake div.row div.food-wid #site-timer p {
+div.site-pancake div.row div.food-wid .site-timer p {
   font-family: "alegreya", serif;
   font-weight: 700;
   color: #817d72;
@@ -540,12 +553,126 @@ div.site-breakfast {
   background-size: cover;
   min-height: auto;
   max-width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#brkfst-left .heading-white {
+  color: #fff;
+}
+
+#brkfst-left h4 {
+  color: #a47d5e;
+}
+
+#brkfst-left .brk-price {
+  color: #dfc691;
+}
+
+#brkfst-left p {
+  color: #9b9895;
+}
+
+#brkfst-right {
+  background: #f3f1e9;
 }
 
 /* Common For Tablets and Desktops */
 /* Tablets Portrait and Landscape */
 /* Desktops and laptops */
 /* Jibarito Sandwich Section Properties */
+#site-sandwich {
+  text-align: center;
+  padding-top: 4.2rem;
+}
+
+#sandwich-heading h4 {
+  padding-bottom: 1.2rem;
+}
+
+#sandwich-left {
+  padding: 0 1.2rem;
+}
+
+#sandwich-left h2 {
+  color: #a47d5e;
+  font-weight: 700;
+}
+
+#sandwich-left img {
+  border-radius: 50%;
+}
+
+#sandwich-right img {
+  margin-top: 3.6rem;
+  padding: .3rem;
+  background: #fff;
+  box-shadow: 0 10px 54px 1px rgba(105, 80, 58, 0.45);
+}
+
+#sandwich-right .btn-recipe {
+  background: #fff;
+  text-transform: uppercase;
+  color: #dfc691;
+  outline: none;
+  border: 1px dashed #dfc691;
+  padding: .5rem 1.2rem;
+  position: absolute;
+  left: -20px;
+  top: 520px;
+}
+
+#sandwich-right .timer-top {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  right: .5rem;
+  top: 20px;
+}
+
+#sandwich-right .timer-middle {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  right: .5rem;
+  top: 222px;
+}
+
+#sandwich-right .timer-bottom {
+  background-image: url(../images/pancake-ready.png);
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 54px 1px rgba(105, 80, 58, 0.45);
+  right: .3rem;
+  top: 425px;
+}
+
+#sandwich-right .site-timer {
+  max-width: 100%;
+  position: absolute;
+  padding: 2rem;
+}
+
+#sandwich-right .site-timer h3 {
+  color: #a47d5e;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#sandwich-right .site-timer .site-time {
+  color: #dfc691;
+  font-size: 4.6rem;
+  font-weight: 600;
+  font-family: "alegreya", serif;
+  line-height: 1.1rem;
+  padding: 5px 0;
+}
+
+#sandwich-right .site-timer p {
+  font-family: "alegreya", serif;
+  font-weight: 700;
+  color: #817d72;
+  margin: 0;
+  padding-top: 25px;
+}
+
 /* Common For Tablets and Desktops */
 /* Tablets Portrait and Landscape */
 /* Desktops and laptops */

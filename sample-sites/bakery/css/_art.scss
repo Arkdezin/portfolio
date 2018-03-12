@@ -10,8 +10,17 @@
   #art-center {
     width: 40%;
     position: relative;
-    top: -225px;
+    top: -238px;
     transform: translateY(-50%);
+  }
+  #art-cc {
+    text-transform: uppercase;
+    color: $price-color;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 195px;
+    z-index: 2222;
+    left: 190px;
   }
 }
 div.site-artcake {
@@ -22,6 +31,7 @@ div.site-artcake {
   min-height: auto;
   max-width: 100%;
   padding-top: 5.4rem;
+  margin-bottom: -7rem;
 
   div.row {
     div {

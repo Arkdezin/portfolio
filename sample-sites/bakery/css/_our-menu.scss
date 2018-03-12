@@ -7,8 +7,36 @@ div.site-breakfast {
   background-size: cover;
   min-height: auto;
   max-width: 100%;
+  padding: 5rem 0;
+  text-align: center;
 }
 
+#brkfst-left {
+  .heading-white {
+    color: #fff;
+  }
+
+  h4 {
+    color: $subheading-color;
+  }
+
+  .brk-price {
+    color: $price-color;
+  }
+  p {
+    color: $brk-text-color * .8;
+  }
+}
+
+#brkfst-right {
+  background: $body-bg;
+  h1 {
+    
+  }
+  p {
+
+  }
+}
 /* Common For Tablets and Desktops */
 @media only screen
   and (min-device-width: 768px)
@@ -19,7 +47,7 @@ div.site-breakfast {
 /* Tablets Portrait and Landscape */
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1280px) {
+  and (max-device-width: 1279px) {
 
 }
 
